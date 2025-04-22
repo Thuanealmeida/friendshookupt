@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 Meet Local Hot Women 🔥</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Verdana', sans-serif;
+
+      /* 🔻 INSERT YOUR BACKGROUND IMAGE HERE 🔻 */
+      background: url('https://i.ebayimg.com/images/g/AKoAAOSwqGZkhEZH/s-l1200.jpg') no-repeat center center fixed;
+      background-size: cover;
+
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .box {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #ff007f;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 25px #ff007f88;
+      animation: pulse 3s infinite;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #ff3399;
+      margin-bottom: 15px;
+      text-shadow: 0 0 5px #ff66cc;
+    }
+
+    .message {
+      font-size: 18px;
+      margin-bottom: 25px;
+      min-height: 24px;
+      color: #ffe;
+    }
+
+    .btn {
+      background: #ff007f;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0px 4px 15px rgba(255, 0, 127, 0.7);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #ff3399;
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 25px #ff007f88; }
+      50% { box-shadow: 0 0 35px #ff33aa; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>💋 Meet Hot Women Near You!</h1>
+    <div class="message" id="typing"></div>
+    <a href="https://bggceig.bustyaffar.com/s/63e52f386cf44" class="btn">Start Now 🔥</a>
+  </div>
+
+  <script>
+    const messages = [
+      "No sign-up needed to browse profiles...",
+      "Real women are waiting for a chat 😘",
+      "Discreet & 100% private 🔐",
+    ];
+
+    let msgIndex = 0;
+    let charIndex = 0;
+    const typing = document.getElementById("typing");
+
+    function type() {
+      if (charIndex < messages[msgIndex].length) {
+        typing.innerHTML += messages[msgIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 80);
+      } else {
+        setTimeout(erase, 2000);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typing.innerHTML = messages[msgIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 40);
+      } else {
+        msgIndex = (msgIndex + 1) % messages.length;
+        setTimeout(type, 400);
+      }
+    }
+
+    type();
+  </script>
+</body>
+</html>
